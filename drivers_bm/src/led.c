@@ -48,8 +48,13 @@ void LedREDOn()
 }
 
 void LedREDOff()
-	{
+{
 	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT,5,0);
+}
+
+void LedREDToggle()
+{
+	Chip_GPIO_SetPinToggle(LPC_GPIO_PORT,5,0);
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -70,6 +75,11 @@ void LedGREENOff()
 	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT,5,1);
 }
 
+void LedGREENToggle()
+{
+	Chip_GPIO_SetPinToggle(LPC_GPIO_PORT,5,1);
+}
+
 /////////////////////////////////////////////////////////////////////
 void LedBLUEInit()
 {
@@ -86,6 +96,11 @@ void LedBLUEOn()
 void LedBLUEOff()
 {
 	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT,5,2);
+}
+
+void LedBLUEToggle()
+{
+	Chip_GPIO_SetPinToggle(LPC_GPIO_PORT,5,2);
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -106,6 +121,11 @@ void Led1Off()
 	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT,0,14);
 }
 
+void Led1Toggle()
+{
+	Chip_GPIO_SetPinToggle(LPC_GPIO_PORT,0,14);
+}
+
 /////////////////////////////////////////////////////////////////////
 void Led2Init()
 {
@@ -122,6 +142,11 @@ void Led2On()
 void Led2Off()
 {
 	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT,1,11);
+}
+
+void Led2Toggle()
+{
+	Chip_GPIO_SetPinToggle(LPC_GPIO_PORT,1,11);
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -141,6 +166,11 @@ void Led3Off()
 {
 	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT,1,12);
 }
+void Led3Toogle()
+{
+	Chip_GPIO_SetPinToggle(LPC_GPIO_PORT,1,12);
+}
+
 /////////////////////////////////////////////////////////////////////
 void LEDsInit()
 {

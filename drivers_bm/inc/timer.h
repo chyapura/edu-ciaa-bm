@@ -1,5 +1,5 @@
-#ifndef LED_H
-#define LED_H
+#ifndef TIMER_H
+#define TIMER_H
 
 /*==================[inclusions]=============================================*/
 #include "stdint.h"
@@ -44,37 +44,11 @@ void RIT_IRQHandler(void);
 #endif
 
 /*==================[external functions declaration]=========================*/
-void LedREDInit(void);
-void LedREDOn(void);
-void LedREDOff(void);
-void LedREDToggle(void);
 
-void LedGREENInit(void);
-void LedGREENOn(void);
-void LedGREENOff(void);
-void LedGREENToggle(void);
+void TimerInit(int);
+void TimerClearFlag(void);
 
-void LedBLUEInit(void);
-void LedBLUEOn(void);
-void LedBLUEOff(void);
-void LedBLUEToggle(void);
 
-void Led1Init(void);
-void Led1On(void);
-void Led1Off(void);
-void Led1Toggle(void);
-
-void Led2Init(void);
-void Led2On(void);
-void Led2Off(void);
-void Led2Toggle(void);
-
-void Led3Init(void);
-void Led3On(void);
-void Led3Off(void);
-void Led3Toggle(void);
-
-void LEDsInit(void);
 
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */
